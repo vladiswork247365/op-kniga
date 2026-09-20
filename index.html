@@ -295,6 +295,14 @@ html.js .reveal.in{opacity:1;transform:translateY(0);animation:none}
   footer{margin-bottom:84px}
   .final{margin-bottom:20px}
 }
+ .assoc-perk{display:flex;align-items:center;justify-content:center;gap:10px 22px;flex-wrap:wrap;max-width:800px;margin:28px auto 0;padding:20px 28px;border-radius:18px;text-decoration:none;text-align:center;background:linear-gradient(120deg,rgba(228,0,43,.18),rgba(228,0,43,.05));border:1px solid rgba(255,45,79,.45);box-shadow:0 0 30px -6px rgba(228,0,43,.45);transition:border-color .25s,box-shadow .25s,transform .22s}
+ .assoc-perk:hover{border-color:var(--red-soft);box-shadow:0 0 42px -4px rgba(228,0,43,.7);transform:translateY(-3px)}
+ .assoc-perk-txt{font-size:15px;font-weight:600;line-height:1.55;color:var(--grey)}
+ .assoc-perk-txt b{color:var(--white);font-weight:800}
+ .assoc-perk-txt s{opacity:.7;margin:0 3px}
+ .assoc-perk-txt b.assoc-perk-price{color:var(--red-soft);font-weight:900;font-size:20px;white-space:nowrap}
+ .assoc-perk-go{font-size:11.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--red-soft);white-space:nowrap}
+ @media(max-width:600px){.assoc-perk{padding:18px 20px;gap:8px}.assoc-perk-txt{font-size:14px}}
 </style>
 </head>
 <body>
@@ -778,16 +786,20 @@ html.js .reveal.in{opacity:1;transform:translateY(0);animation:none}
       <div class="price-card reveal">
         <div class="price-badge">Печатная книга</div>
         <div class="price-sub">с автографом от автора</div>
-        <div class="price-val">7 777 <span>₸</span></div>
+        <div class="price-val">17 777 <span>₸</span></div>
         <a href="https://wa.me/77008880242?text=Здравствуйте!%20Хочу%20заказать%20печатную%20книгу%20«Отдел%20продаж.%20Другой%20подход»%20(офлайн)%20offlinebook" target="_blank" class="btn btn-red price-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Заказать офлайн</a>
       </div>
       <div class="price-card reveal">
         <div class="price-badge">Онлайн-книга</div>
         <div class="price-sub">в любом удобном формате</div>
-        <div class="price-val">5 555 <span>₸</span></div>
+        <div class="price-val">15 555 <span>₸</span></div>
         <a href="https://wa.me/77008880242?text=Здравствуйте!%20Хочу%20купить%20книгу%20«Отдел%20продаж.%20Другой%20подход»%20в%20электронном%20виде%20(онлайн)%20onlinebook" target="_blank" class="btn btn-red price-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Купить онлайн</a>
       </div>
     </div>
+    <a href="https://association.systemop.top/" target="_blank" rel="noopener" class="assoc-perk reveal">
+      <span class="assoc-perk-txt">Для участников <b>Ассоциации системных продаж</b> — онлайн-версия книги <s>15 555 ₸</s> <b class="assoc-perk-price">9 999 ₸</b></span>
+      <span class="assoc-perk-go">Перейти в Ассоциацию →</span>
+    </a>
   </div>
 </section>
 
